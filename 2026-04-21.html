@@ -3,19 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Open Graph (카카오톡·슬랙·페이스북 링크 프리뷰 카드) -->
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="2026년 4월 21일 (화) 해볼깡 일일 AI 트렌드">
-  <meta property="og:description" content="🔴거품 신호 / 🟢실제 성과 / 🟡경고 사인 / 🔵게임 체인저 — B2B 관점으로 본 오늘의 AI 업데이트">
-  <meta property="og:url" content="https://YOUR-PAGES-URL.pages.dev/2026-04-21.html">
-  <meta property="og:image" content="https://YOUR-PAGES-URL.pages.dev/og/2026-04-21.png">
-  <meta property="og:site_name" content="해볼깡 일일 AI 트렌드">
-  <meta property="og:locale" content="ko_KR">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="description" content="AI 서비스·모델·규제 주요 업데이트를 B2B 실무 관점으로 매일 아침 정리합니다.">
-  <!-- Cloudflare Web Analytics — CF 대시보드에서 token 발급 후 YOUR_CF_ANALYTICS_TOKEN 교체 -->
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_CF_ANALYTICS_TOKEN"}'></script>
-
 <title>2026년 4월 21일 (화) 해볼깡 일일 AI 트렌드</title>
 <style>
   :root {
@@ -36,6 +23,8 @@
     --tag-research-bg: #e0f2f8;
     --tag-report: #8a1430;
     --tag-report-bg: #fbe4ea;
+    --tag-domestic: #0a4f87;
+    --tag-domestic-bg: #e1ecf8;
   }
   * { box-sizing: border-box; }
   body {
@@ -125,6 +114,7 @@
   .cat-tag.biz     { color: var(--tag-biz);      background: var(--tag-biz-bg); }
   .cat-tag.research{ color: var(--tag-research); background: var(--tag-research-bg); }
   .cat-tag.report  { color: var(--tag-report);   background: var(--tag-report-bg); }
+  .cat-tag.domestic{ color: var(--tag-domestic); background: var(--tag-domestic-bg); }
   .cat-name {
     font-size: 16px;
     font-weight: 700;
@@ -211,23 +201,14 @@
   }
   footer {
     margin-top: 32px;
-    padding: 20px 24px;
+    padding: 18px 24px;
     background: var(--accent-soft);
     border-radius: 14px;
-    font-size: 13.5px;
-    color: #1a1f2e;
+    font-size: 12.5px;
+    color: var(--muted);
+    text-align: center;
   }
   footer b { color: var(--accent); }
-  .kpi {
-    display: inline-block;
-    padding: 2px 8px;
-    background: #fff4cc;
-    color: #7a5a00;
-    border-radius: 4px;
-    font-size: 12.5px;
-    font-weight: 600;
-    margin-right: 6px;
-  }
 </style>
 </head>
 <body>
@@ -242,11 +223,11 @@
   <div class="tl-dr">
     <h2>오늘의 핵심 한 줄 요약</h2>
     <ul>
-      <li>아마존, 앤트로픽에 <b>추가 250억 달러 투자</b> 공식 발표 — 빅테크 AI 지분 경쟁 재가열</li>
-      <li>앤트로픽 <b>클로드 오퍼스 4.7</b> 현장 전개 + <b>클로드 디자인(Claude Design)</b> 신제품 출시 (오퍼스 4.7 기반)</li>
-      <li>구글 <b>제미나이 3.1 프로</b>, 주요 벤치마크 16개 중 13개 1위 · <b>제마 4 (Gemma 4)</b> 오픈 웨이트 공개</li>
-      <li>EU AI Act: <b>회원국별 규제 샌드박스 설치 의무</b> 시한 2026년 8월 2일 임박</li>
-      <li>PwC 2026 AI 보고서: AI 경제 효과의 <b>75%를 상위 20% 기업이 독식</b></li>
+      <li>아마존, 앤트로픽에 <b>추가 250억 달러 투자</b> 공식 발표(4/20) — AWS-클로드 생태계 락인 본격화</li>
+      <li>구글, <b>"제미나이 인 크롬" 한국 공식 출시</b>(4/21) — 국내 엔터프라이즈 AI 접근성 변곡점</li>
+      <li><b>마벨-구글 커스텀 AI 칩</b> 협력 보도(4/20) — TPU 인퍼런스 전용 칩·메모리 프로세싱 유닛 공동 설계</li>
+      <li><b>OpenAI, 1,220억 달러 시리즈 D</b> 공식 클로즈 — 기업가치 8,520억 달러</li>
+      <li>MIT Technology Review <b>"2026년 AI 주목 10가지"</b> 오늘(4/21) EmTech AI에서 공개</li>
     </ul>
   </div>
 
@@ -259,22 +240,22 @@
 
     <div class="temp-row red">
       <div class="temp-tag">🔴 거품 신호</div>
-      <p><b>OpenAI 광고 매출 전망</b>(2026년 25억$ → 2030년 1,000억$)은 초기 2개월 파일럿 수치만으로 그린 공격적 그래프. <b>메타 2026년 AI CapEx 1,150~1,350억 달러</b>(전년 대비 2배)는 뮤즈 스파크 성과 검증 이전 단계의 베팅. <b>Q1 자금 3,000억$ 편중</b>(OpenAI·앤트로픽·xAI 집중)도 소수 과열 징후.</p>
+      <p><b>OpenAI $122B 라운드·$852B 밸류에이션</b>은 월매출 $2B 기반이지만, 아마존 투자금 중 $350억이 IPO 또는 AGI 마일스톤 도달 조건부라는 점에서 "조건부 거품". <b>마벨 주가 5.83% 상승</b>도 구글과의 계약이 공식화되지 않은 상태에서 JPMorgan이 반박하는 등 보도만으로 움직인 레버리지 장세. Q1 VC 펀딩 <b>$3,000억</b>의 상당 부분이 소수 프론티어 스타트업에 집중.</p>
     </div>
 
     <div class="temp-row green">
       <div class="temp-tag">🟢 실제 성과</div>
-      <p><b>클로드 오퍼스 4.7</b>이 제미나이 3.1 프로·GPT-5 추월하며 상용 1위, <b>제미나이 3.1 프로</b>는 16개 벤치 중 13개 1위(GPQA Diamond 94.3%), <b>GPT-5.4</b>는 GDPval 83%로 44개 직종 전문가 수준 도달. <b>제마 4</b>는 8GB VRAM 로컬 실행 + VRAM 60% 절감, <b>딥시크 V4</b>는 학습비 $5.2M로 프론티어급 재현.</p>
+      <p><b>구글 Gemma 4</b> Apache 2.0 라이선스 오픈 모델 공개, <b>Gemini 3.1 Ultra</b> 2M 토큰 컨텍스트·네이티브 멀티모달, <b>NVIDIA Ising</b> 양자 컴퓨팅용 오픈소스 AI 모델(전통 방식 대비 2.5배 빠른 오류 정정·3배 정확도). <b>Google TurboQuant</b>(ICLR 2026)로 KV 캐시 메모리 부담 대폭 경감. <b>OpenAI 월매출 $2B, 엔터프라이즈 매출 40% 돌파</b> — 기업 수요가 실체적.</p>
     </div>
 
     <div class="temp-row yellow">
       <div class="temp-tag">🟡 경고 사인</div>
-      <p><b>EU AI Act 샌드박스 의무 D-103일</b>(8/2 시행) + <b>뉴욕 RAISE Act 3/19 발효</b>로 규제 조각이 주(州)·국가별로 계속 쏟아짐. <b>OpenAI·앤트로픽·구글이 중국 모델 증류에 공동 대응</b>을 공식화할 만큼 기술 유출 리스크가 구체화. <b>"Trump America AI Act" 초안</b>은 연방 규제 재편 가능성 시사.</p>
+      <p><b>EU AI Act D-103일</b>(8/2 고위험 AI 본격 시행)로 유럽에 AI 시스템 배포한 모든 기업이 리스크 평가·샌드박스 등록 준비 필요. <b>NY RAISE Act</b>는 프론티어 AI 학습 비용 기준으로 안전 프레임워크 의무화. <b>SK 브로드밴드 AI Agent Lab</b>처럼 국내 대기업도 조직 차원의 AI 내재화를 본격 시작 — 외부 파트너사의 역량이 공개적으로 비교되는 흐름.</p>
     </div>
 
     <div class="temp-row blue">
       <div class="temp-tag">🔵 게임 체인저</div>
-      <p><b>애플이 자체 LLM 대신 구글 제미나이를 Siri에 채택</b> → 빅테크조차 외부 프론티어 모델을 택하는 AI 스택 표준화. <b>아마존의 앤트로픽 추가 250억$ 투자</b>로 AWS-클로드 밀착 심화. <b>비자 Intelligent Commerce Connect</b>는 AI 에이전트가 직접 결제하는 새 인프라. <b>PwC: AI 효과 75%를 상위 20% 기업 독식</b> — AI 격차의 고정화가 시작됨.</p>
+      <p><b>구글, 제미나이 인 크롬 한국 출시</b>(4/21)로 국내 웹/업무 환경에서 AI 보조가 기본값이 됨. <b>Salesforce Headless 360</b>은 CRM 전체를 API/MCP/CLI로 노출해 AI 에이전트가 직접 조작하는 구조로 전환. <b>NVIDIA Agent Toolkit</b>에 Adobe·세일즈포스·SAP·서비스나우 등 17개 엔터프라이즈 공식 채택 — 에이전트 운영 계층의 표준화가 오늘도 한 칸 더 진행.</p>
     </div>
   </section>
 
@@ -286,51 +267,33 @@
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">1.</span>앤트로픽 "클로드 오퍼스 4.7" 공식 배포… 제미나이 3.1 프로·GPT-5 모두 제친 플래그십</div>
-      <p class="summary">4월 16일 공개된 오퍼스 4.7은 복잡한 추론과 장기 실행 에이전트 워크플로우에 최적화. 주요 벤치마크에서 경쟁 모델 대비 우위를 보이며 현재 상용 LLM 1위로 평가됨.</p>
-      <p class="meta">출처: <a href="https://www.anthropic.com/news/claude-opus-4-7?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=anthropic-com" target="_blank" rel="noopener">anthropic.com</a> · <a href="https://www.inc.com/amaya-nichole/anthropics-claude-opus-4-7-is-here-and-its-already-outperforming-gemini-3-1-pro-and-gpt-5/91332180?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=inc-com" target="_blank" rel="noopener">Inc.</a></p>
+      <div class="title"><span class="num">1.</span>구글 "제미나이 3.1 울트라" — 2M 토큰 컨텍스트·네이티브 멀티모달</div>
+      <p class="summary">텍스트·이미지·오디오·비디오를 중간 변환 없이 한 번에 추론하도록 훈련 단계부터 설계. 2M 토큰 컨텍스트 윈도우로 긴 문서·영상 분석 파이프라인 단순화 가능.</p>
+      <p class="meta">출처: <a href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">llm-stats.com</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">2.</span>구글, 오픈 웨이트 모델 "제마 4(Gemma 4)" 공개 — Gemini API·AI Studio에 탑재</div>
-      <p class="summary">텍스트·이미지 이해, 검색 그라운딩, 함수 호출 예제 기본 제공. 8GB VRAM 환경에서도 로컬 파인튜닝 가능하며 기존 FA2 설정 대비 약 1.5배 빠르고 VRAM 60% 절감.</p>
-      <p class="meta">출처: <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=blog-google" target="_blank" rel="noopener">Google Blog</a></p>
+      <div class="title"><span class="num">2.</span>구글, 오픈 모델 "제마 4(Gemma 4)" 공개 — 추론·에이전트 워크플로우 특화</div>
+      <p class="summary">Apache 2.0 라이선스로 상업 이용 가능한 오픈 웨이트 모델. 텍스트·이미지 이해, 검색 그라운딩, 함수 호출 기본 지원. 기존 FA2 대비 약 1.5배 빠른 학습·VRAM 60% 절감.</p>
+      <p class="meta">출처: <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/" target="_blank" rel="noopener">Google Blog</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">3.</span>구글 딥마인드 "제미나이 3.1 프로" — GPQA Diamond 94.3% 등 16개 벤치 중 13개 1위</div>
-      <p class="summary">실시간 음성·이미지 분석 추가. 텍스트·오디오·이미지·영상 네이티브 처리와 200만 토큰 컨텍스트 지원으로 멀티모달 추론 체감 성능 대폭 개선.</p>
-      <p class="meta">출처: <a href="https://llm-stats.com/llm-updates?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=llm-stats-com" target="_blank" rel="noopener">llm-stats.com</a></p>
+      <div class="title"><span class="num">3.</span>OpenAI "GPT-5.4" 3종(Standard·Thinking·Pro) 동시 공개</div>
+      <p class="summary">동일 월에 GPT-5.4·Gemini 3.1 Ultra·Grok 4.20이 한꺼번에 출시되며 프런티어 모델 갱신 주기가 분기에서 월 단위로 단축. GPT-5.4는 네이티브 컴퓨터 사용 능력을 표준 탑재.</p>
+      <p class="meta">출처: <a href="https://releasebot.io/updates/openai" target="_blank" rel="noopener">Releasebot · OpenAI</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">4.</span>OpenAI "GPT-5.4" — 네이티브 컴퓨터 사용(Computer-Use) 첫 상용화</div>
-      <p class="summary">GPT-5.4는 OpenAI가 범용 모델 레벨에서 컴퓨터 조작 능력을 기본 탑재한 첫 모델. 여러 앱을 넘나드는 복잡한 워크플로우 자동화가 가능하며 GDPval 83%로 44개 직종에서 전문가 수준 매치·초과.</p>
-      <p class="meta">출처: <a href="https://releasebot.io/updates/openai?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=releasebot-io" target="_blank" rel="noopener">Releasebot · OpenAI</a></p>
+      <div class="title"><span class="num">4.</span>앤트로픽 "클로드 오퍼스 4.7" — 복잡 추론·장기 에이전트 워크플로우 1위</div>
+      <p class="summary">4월 16일 공개. 장기 실행 에이전트 워크플로우에 최적화됐으며 주요 상용 LLM 벤치에서 제미나이 3.1·GPT-5와 경쟁 구도를 계속 유지.</p>
+      <p class="meta">출처: <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener">anthropic.com</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">5.</span>앤트로픽 "클로드 디자인(Claude Design)" 출시 — 오퍼스 4.7 기반 비주얼 제작 에이전트</div>
-      <p class="summary">디자인·프로토타입·슬라이드·피치덱·마케팅 크리에이티브를 클로드와 협업해 완성. 캔바(Canva)와 통합돼 AI 드래프트를 즉시 편집 가능한 디자인 파일로 전환.</p>
-      <p class="meta">출처: <a href="https://www.anthropic.com/news?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=anthropic-com" target="_blank" rel="noopener">anthropic.com/news</a></p>
-    </div>
-
-    <div class="news-item">
-      <div class="title"><span class="num">6.</span>메타 "뮤즈 스파크(Muse Spark)" — 자체 개발 멀티모달 LLM 공개</div>
-      <p class="summary">알렉산더 왕(Alexandr Wang) 체제 Meta Superintelligence Labs의 첫 대형 모델. 인식·추론·헬스·에이전트 태스크에서 경쟁력 있는 성능 표방. 메타 2026년 AI CapEx는 1,150~1,350억 달러 규모.</p>
-      <p class="meta">출처: <a href="https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=cnbc-com" target="_blank" rel="noopener">CNBC</a></p>
-    </div>
-
-    <div class="news-item">
-      <div class="title"><span class="num">7.</span>중국 딥시크(DeepSeek) V4 — 1조 파라미터 MoE, 오픈 웨이트 전면 공개</div>
-      <p class="summary">미국 프론티어급(Claude Opus 4.6 수준)과 벤치마크에서 경쟁. 학습 비용은 520만 달러 수준으로 추정돼 "저비용 고성능 오픈 모델" 흐름을 가속.</p>
-      <p class="meta">출처: <a href="https://llm-stats.com/ai-news?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=llm-stats-com" target="_blank" rel="noopener">llm-stats.com</a></p>
-    </div>
-
-    <div class="news-item">
-      <div class="title"><span class="num">8.</span>구글, "제미나이(Gemini)" 맥용 네이티브 데스크톱 앱 런칭 (4/15)</div>
-      <p class="summary">macOS Sequoia 15.0 이상, 애플 실리콘 전용. <b>Option+Space</b> 글로벌 단축키로 어디서든 호출 가능하며, 화면 인식 기반 컨텍스추얼 도움도 제공.</p>
-      <p class="meta">출처: <a href="https://www.roborhythms.com/google-gemini-mac-app/?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=roborhythms-com" target="_blank" rel="noopener">RoboRhythms</a></p>
+      <div class="title"><span class="num">5.</span>NVIDIA "Ising" — 세계 최초 양자 컴퓨팅 전용 오픈소스 AI 모델 패밀리</div>
+      <p class="summary">큐비트 오류 정정 디코딩에서 기존 방식 대비 <b>최대 2.5배 빠르고 3배 정확</b>. 양자 하드웨어 스택과 AI 모델이 결합된 첫 프로덕션급 모델.</p>
+      <p class="meta">출처: <a href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">llm-stats.com</a></p>
     </div>
   </section>
 
@@ -343,80 +306,36 @@
 
     <div class="news-item">
       <div class="title"><span class="num">1.</span>아마존, 앤트로픽에 추가 250억 달러(약 34조 원) 투자 공식 발표 (4/20)</div>
-      <p class="summary"><span class="kpi">B2B 시사점</span>AWS-앤트로픽 밀착도 심화. 엔터프라이즈 AI 영업 측면에서 AWS 기반 클로드 기능 로드맵(Bedrock, Trainium 등)이 다시 한 번 우선순위로 올라올 가능성.</p>
-      <p class="meta">출처: <a href="https://www.gurufocus.com/news/8804709/amazon-invests-25-billion-in-ai-startup-anthropic?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=gurufocus-com" target="_blank" rel="noopener">GuruFocus</a></p>
+      <p class="summary">기존 80억 달러 대비 확대. 앤트로픽은 10년간 AWS 기술에 1,000억 달러 이상 집행을 약속. 클로드 학습·배포용 최대 5GW 용량 확보, Trainium2·Trainium3 약 1GW가 2026년 말까지 가동 예정.</p>
+      <p class="meta">출처: <a href="https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://www.anthropic.com/news/anthropic-amazon-compute" target="_blank" rel="noopener">Anthropic</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">2.</span>애플, 새 시리(Siri)에 구글 "제미나이" 채택 — 애플 프라이빗 클라우드 컴퓨트에서 구동</div>
-      <p class="summary">애플이 자체 LLM 대신 외부 프론티어 모델을 전면에 내세운 전환점. 데이터는 애플 서버에서 처리돼 프라이버시 이슈를 최소화하는 구조.</p>
-      <p class="meta">출처: <a href="https://scitech.whatfinger.com/2026/04/17/ai-news-huge-updates-from-anthropic-openai-and-google/?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=scitech-whatfinger-com" target="_blank" rel="noopener">SciTech Aggregate</a></p>
+      <div class="title"><span class="num">2.</span>구글, "제미나이 인 크롬(Gemini in Chrome)" 한국 출시 (4/21)</div>
+      <p class="summary">한국·일본·호주·싱가포르 등 APAC 7개국 확장. 크롬 사이드 패널에서 페이지 요약, 이메일 초안, 유튜브 영상 질문 등을 사이트 이탈 없이 처리. 제미나이 3.1 탑재.</p>
+      <p class="meta">출처: <a href="https://techcrunch.com/2026/04/20/google-rolls-out-gemini-in-chrome-in-seven-new-countries/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://www.engadget.com/ai/google-brings-gemini-in-chrome-to-users-in-australia-japan-singapore-and-south-korea-220000474.html" target="_blank" rel="noopener">Engadget</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">3.</span>캔바(Canva), AI 2.0·에이전트형 디자인 스위트 공개</div>
-      <p class="summary">단순 "AI 내장 디자인 플랫폼"에서 벗어나 에이전트가 브리프를 받아 다단계 디자인 작업을 자동 수행. 앤트로픽 "클로드 디자인"과의 양방향 통합 포함.</p>
-      <p class="meta">출처: <a href="https://fortune.com/2026/04/16/canva-ai-agentic-design-suite-coo-cliff-obrecht/?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=fortune-com" target="_blank" rel="noopener">Fortune</a></p>
+      <div class="title"><span class="num">3.</span>마벨-구글, 커스텀 AI 칩 2종 공동 설계 보도 (4/20)</div>
+      <p class="summary">TPU와 짝을 이루는 메모리 프로세싱 유닛(MPU), 인퍼런스 전용 차세대 TPU 아키텍처. 마벨 주가 5.83% 급등했으나 JPMorgan은 계약 체결 전 단계임을 경고 — 엔비디아 독점 구도에 균열 시도.</p>
+      <p class="meta">출처: <a href="https://www.cnbc.com/2026/04/20/marvell-stock-google-custom-ai-chips.html" target="_blank" rel="noopener">CNBC</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">4.</span>어도비, "파이어플라이 AI 어시스턴트(Firefly AI Assistant)" 공개</div>
-      <p class="summary">포토샵·프리미어·라이트룸·일러스트레이터 등 크리에이티브 클라우드 전 앱을 자연어로 오케스트레이션하는 멀티스텝 크리에이티브 에이전트.</p>
-      <p class="meta">출처: <a href="https://futuretools.io/news?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=futuretools-io" target="_blank" rel="noopener">FutureTools</a></p>
+      <div class="title"><span class="num">4.</span>OpenAI, 1,220억 달러 시리즈 D 클로즈 — 기업가치 8,520억 달러</div>
+      <p class="summary">아마존 500억, 엔비디아·소프트뱅크 각 300억 달러 참여. 아마존 투자분 중 350억은 IPO 또는 AGI 마일스톤 도달 조건부. 현재 월매출 20억 달러, 엔터프라이즈 매출 비중 40% 돌파.</p>
+      <p class="meta">출처: <a href="https://openai.com/index/accelerating-the-next-phase-ai/" target="_blank" rel="noopener">OpenAI</a> · <a href="https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round" target="_blank" rel="noopener">Bloomberg</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">5.</span>비자(Visa), "인텔리전트 커머스 커넥트(Intelligent Commerce Connect)" 공개</div>
-      <p class="summary">AI 에이전트가 사용자 대신 상품 탐색·선택·결제를 수행하는 에이전틱 커머스용 결제 플랫폼. 금융·커머스 B2B 영역에서 새 인프라 레이어 등장.</p>
-      <p class="meta">출처: <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=crescendo-ai" target="_blank" rel="noopener">Crescendo AI</a></p>
-    </div>
-
-    <div class="news-item">
-      <div class="title"><span class="num">6.</span>마이크로소프트, 일본에 4년간 100억 달러(약 14조 원) AI 인프라 투자</div>
-      <p class="summary">소프트뱅크·사쿠라 인터넷과 데이터센터 확장, 일본 정부와 사이버보안 협력, 2030년까지 100만 명 엔지니어 육성 약속. APAC 리전 공급망 재편 시사.</p>
-      <p class="meta">출처: <a href="https://empowering.cloud/microsoft-365-ai-workplace-update-april-2026/?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=empowering-cloud" target="_blank" rel="noopener">Empowering Cloud</a></p>
-    </div>
-
-    <div class="news-item">
-      <div class="title"><span class="num">7.</span>헬스케어·로보틱스 AI에 대형 자금 — 리커시브 슈퍼인텔리전스 5억 달러, X 스퀘어 로봇 2.76억 달러</div>
-      <p class="summary">GV·엔비디아, 샤오미·세쿼이아 차이나 등 참여. 피지컬 AI·임바디드 AI 섹터로 자금이 쏠리는 흐름이 2분기에도 이어지는 중.</p>
-      <p class="meta">출처: <a href="https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=news-crunchbase-com" target="_blank" rel="noopener">Crunchbase</a></p>
+      <div class="title"><span class="num">5.</span>세일즈포스 "Headless 360" 공개 — 플랫폼 전체가 AI 에이전트 인프라로</div>
+      <p class="summary">TDX 2026에서 공개. CRM의 모든 기능을 API·MCP 툴·CLI 명령어로 노출해 에이전트가 브라우저 없이 전체 시스템 운영. 100+개 신규 툴·스킬을 개발자에게 즉시 제공, Agentforce Vibes 포함.</p>
+      <p class="meta">출처: <a href="https://venturebeat.com/technology/salesforce-launches-headless-360-to-turn-its-entire-platform-into-infrastructure-for-ai-agents" target="_blank" rel="noopener">VentureBeat</a></p>
     </div>
   </section>
 
-  <!-- 3. 규제/정책 -->
-  <section class="category">
-    <div class="cat-head">
-      <span class="cat-tag policy">규제/정책</span>
-      <span class="cat-name">법·가이드라인·컴플라이언스</span>
-    </div>
-
-    <div class="news-item">
-      <div class="title"><span class="num">1.</span>EU AI Act: 회원국별 "AI 규제 샌드박스" 설치 의무 시한 D-103일 (8/2 적용)</div>
-      <p class="summary">Article 57에 따라 각국은 1개 이상의 샌드박스를 구축해야 함. 고위험 AI 규정 적용 시한은 2027년 12월까지 연기 논의 중이며 2026년 내 입법 협상 예정.</p>
-      <p class="meta">출처: <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=digital-strategy-ec-europa-eu" target="_blank" rel="noopener">European Commission</a></p>
-    </div>
-
-    <div class="news-item">
-      <div class="title"><span class="num">2.</span>뉴욕주 RAISE Act 발효 — 생성형 AI 안전·교육 의무 본격화</div>
-      <p class="summary">3월 19일부로 "Responsible Artificial Intelligence Safety and Education Act" 시행. 기업의 AI 리스크 고지·사용자 교육 의무가 주 법령 차원으로 내려옴.</p>
-      <p class="meta">출처: <a href="https://www.alston.com/en/insights/publications/2026/04/ai-quarterly-april-2026?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=alston-com" target="_blank" rel="noopener">Alston &amp; Bird AI Quarterly</a></p>
-    </div>
-
-    <div class="news-item">
-      <div class="title"><span class="num">3.</span>OpenAI·앤트로픽·구글, 중국 경쟁사의 모델 증류(Distillation) 공동 대응</div>
-      <p class="summary">Frontier Model Forum을 통해 적대적 추출 탐지 정보를 교환. 미·중 AI 기술 유출 방지 협력이 공식 프레임 안으로 들어옴.</p>
-      <p class="meta">출처: <a href="https://www.bloomberg.com/news/articles/2026-04-06/openai-anthropic-google-unite-to-combat-model-copying-in-china?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=bloomberg-com" target="_blank" rel="noopener">Bloomberg</a></p>
-    </div>
-
-    <div class="news-item">
-      <div class="title"><span class="num">4.</span>미국 블랙번 상원의원, "Trump America AI Act" 입법 초안 공개</div>
-      <p class="summary">3월 18일 발의된 프레임워크는 연방 차원의 AI 감독 체계 일원화를 지향. 주(州) 별 상이한 규제 조각을 연방이 통합하려는 시도.</p>
-      <p class="meta">출처: <a href="https://www.eversheds-sutherland.com/en/united-states/insights/gloabl-ai-bulletin-april-2026?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=eversheds-sutherland-com" target="_blank" rel="noopener">Eversheds Sutherland</a></p>
-    </div>
-  </section>
-
-  <!-- 4. 연구/기술 -->
+  <!-- 3. 연구/기술 -->
   <section class="category">
     <div class="cat-head">
       <span class="cat-tag research">연구/기술</span>
@@ -424,31 +343,37 @@
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">1.</span>터프츠大, AI 에너지 소모 최대 100배 절감 — 신경망 + 기호적 추론 결합</div>
-      <p class="summary">로봇이 시행착오 대신 "논리적으로 생각"하도록 설계. 정확도까지 개선돼 엣지·임바디드 AI 비용 구조에 파급 가능성. 5월 비엔나 ICRA 2026에서 발표 예정.</p>
-      <p class="meta">출처: <a href="https://www.sciencedaily.com/releases/2026/04/260405003952.htm?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=sciencedaily-com" target="_blank" rel="noopener">ScienceDaily</a></p>
+      <div class="title"><span class="num">1.</span>구글 "TurboQuant" ICLR 2026 발표 — KV 캐시 메모리 최대 6배 절감</div>
+      <p class="summary">PolarQuant 벡터 회전 + Quantized Johnson-Lindenstrauss 압축의 2단계 접근으로 LLM 서빙 비용과 컨텍스트 윈도우 확장 전략에 직접 영향. 실제 서빙 스택 전환 시 추론 비용 구조 재계산 필요.</p>
+      <p class="meta">출처: <a href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">llm-stats.com</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">2.</span>구글, "TurboQuant" ICLR 2026 발표 — LLM 메모리 병목 돌파</div>
-      <p class="summary">Key-Value 캐시 병목을 벡터 양자화로 최대 6배 감소. LLM 서빙 비용 구조와 컨텍스트 윈도우 확장 전략에 직접 영향.</p>
-      <p class="meta">출처: <a href="https://llm-stats.com/ai-news?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=llm-stats-com" target="_blank" rel="noopener">llm-stats.com</a></p>
+      <div class="title"><span class="num">2.</span>터프츠大, 신경망 + 기호적 추론 결합으로 AI 에너지 최대 100배 절감</div>
+      <p class="summary">로봇이 시행착오 대신 "논리적으로 사고"하도록 설계. 정확도까지 개선돼 엣지·임바디드 AI 비용 구조에 파급 가능성. 5월 비엔나 ICRA 2026에서 본 발표 예정.</p>
+      <p class="meta">출처: <a href="https://www.sciencedaily.com/releases/2026/04/260405003952.htm" target="_blank" rel="noopener">ScienceDaily</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">3.</span>앤트로픽 해석가능성 팀 — "감정 개념과 LLM 기능" 논문 (4/2)</div>
-      <p class="summary">Claude Sonnet 4.5에 171개의 감정 단어를 부여해 단편 소설을 쓰게 하고, 내부 활성화 패턴을 분석. LLM의 "감정 유사 구조"를 정량화한 첫 실증.</p>
-      <p class="meta">출처: <a href="https://www.anthropic.com/news?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=anthropic-com" target="_blank" rel="noopener">anthropic.com</a></p>
+      <div class="title"><span class="num">3.</span>앤트로픽 해석가능성 팀, "감정 개념과 LLM 기능" 논문 (4/2)</div>
+      <p class="summary">Claude Sonnet 4.5에 171개 감정 단어를 부여해 단편을 쓰게 하고 내부 활성화 패턴을 분석. 171개 서로 다른 감정 활성화 패턴이 모델 행동을 인과적으로 형성함을 실증.</p>
+      <p class="meta">출처: <a href="https://www.anthropic.com/news" target="_blank" rel="noopener">anthropic.com</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">4.</span>MIT, AI로 원자 결함 탐지 — 반도체·에너지 소재 효율 개선 기대</div>
-      <p class="summary">소재 과학에 AI를 접목해 열 전달·에너지 변환 효율을 높이는 결함 분석 기법. 반도체 공정·신재생 에너지 산업으로 바로 이어질 수 있는 응용 연구.</p>
-      <p class="meta">출처: <a href="https://www.devflokers.com/blog/new-ai-papers-arxiv-last-24-hours-april-2026?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=devflokers-com" target="_blank" rel="noopener">devFlokers</a></p>
+      <div class="title"><span class="num">4.</span>PrismML 등, "1비트 LLM" 오픈소스화 — AI 효율 새로운 돌파</div>
+      <p class="summary">1비트 가중치 LLM이 오픈소스로 공개되며 엣지·CPU 추론 가능성 확대. 수학·엔지니어링 차원의 구조 변화라 인프라 투자 결정 재검토 변수가 될 수 있음.</p>
+      <p class="meta">출처: <a href="https://www.mejba.me/blog/ai-developments-april-2026-roundup" target="_blank" rel="noopener">April 2026 Roundup</a></p>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">5.</span>구글·Oratomic 공동 연구 — AI 가속 양자 컴퓨팅 암호 돌파 임박</div>
+      <p class="summary">AI가 양자 하드웨어 설계를 앞당기며 인터넷 암호 프로토콜 해독 시점이 당초 예상보다 앞당겨질 가능성. <b>포스트양자 암호(PQC) 전환 로드맵 재검토</b>가 실무 이슈로.</p>
+      <p class="meta">출처: <a href="https://time.com/article/2026/04/07/ai-quantum-computing-advance/" target="_blank" rel="noopener">TIME</a></p>
     </div>
   </section>
 
-  <!-- 5. 리포트 -->
+  <!-- 4. 리포트 -->
   <section class="category">
     <div class="cat-head">
       <span class="cat-tag report">리포트</span>
@@ -456,34 +381,108 @@
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">1.</span>PwC 2026 AI 성과 연구 — AI 경제 효과의 75%를 상위 20% 기업이 독식</div>
-      <p class="summary">상위 기업은 "생산성"이 아닌 "성장"에 AI를 투입. B2B 세일즈 관점: 고객사의 AI 투자 동기를 비용절감이 아닌 매출·신규사업 확대로 재포지셔닝해야 할 근거.</p>
-      <p class="meta">출처: <a href="https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=pwc-com" target="_blank" rel="noopener">PwC</a></p>
+      <div class="title"><span class="num">1.</span>MIT Technology Review, "2026년 AI 주목 10가지" 4/21 EmTech AI에서 최초 공개</div>
+      <p class="summary">올해 처음 만들어진 연례 리스트. AI 컴패니언, 기계적 해석가능성, 생성형 코딩, 하이퍼스케일 데이터센터 등이 포함. 2026 내내 기사·피처로 추적 예정이라 의제 세팅 관점에서 필청.</p>
+      <p class="meta">출처: <a href="https://www.technologyreview.com/2026/04/14/1135298/coming-soon-10-things-that-matter-in-ai-right-now/" target="_blank" rel="noopener">MIT Technology Review</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">2.</span>크런치베이스 — Q1 2026 글로벌 벤처 투자 3,000억 달러 돌파, AI가 견인</div>
-      <p class="summary">파운데이션 AI 스타트업 투자액만으로 2025년 연간 금액의 2배. 자금 편중이 OpenAI·앤트로픽·xAI 중심으로 심화되는 추세.</p>
-      <p class="meta">출처: <a href="https://news.crunchbase.com/venture/foundational-ai-startup-funding-doubled-openai-anthropic-xai-q1-2026/?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=news-crunchbase-com" target="_blank" rel="noopener">Crunchbase</a></p>
+      <div class="title"><span class="num">2.</span>크런치베이스 — Q1 2026 글로벌 VC 펀딩 3,000억 달러 돌파, AI가 견인</div>
+      <p class="summary">파운데이션 AI 스타트업 투자액만으로 2025년 연간 규모의 2배. OpenAI·앤트로픽·xAI 중심의 자금 편중 심화로 <b>상위 3개사 외 자금 조달 난이도 급상승</b>.</p>
+      <p class="meta">출처: <a href="https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/" target="_blank" rel="noopener">Crunchbase</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">3.</span>스탠퍼드 HAI "2026 AI Index" 공개 — 채택 속도가 PC·인터넷 보급 때보다 빠름</div>
-      <p class="summary">최상위 모델은 여전히 성능이 개선되고 있으며, 기업·소비자 도입 곡선이 이전 기술 전환기를 압도. 경영 의사결정에서 "AI 도입 지연=구조적 경쟁력 손실".</p>
-      <p class="meta">출처: <a href="https://spectrum.ieee.org/state-of-ai-index-2026?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=spectrum-ieee-org" target="_blank" rel="noopener">IEEE Spectrum</a> · <a href="https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=hai-stanford-edu" target="_blank" rel="noopener">Stanford HAI</a></p>
+      <div class="title"><span class="num">3.</span>스탠퍼드 HAI "2026 AI Index" 공개 — 채택 속도가 PC·인터넷 때보다 빠름</div>
+      <p class="summary">최상위 모델은 여전히 성능 개선 중이며, 기업·소비자 도입 곡선이 이전 기술 전환기를 압도. 경영 의사결정에서 "AI 도입 지연=구조적 경쟁력 손실".</p>
+      <p class="meta">출처: <a href="https://spectrum.ieee.org/state-of-ai-index-2026" target="_blank" rel="noopener">IEEE Spectrum</a> · <a href="https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report" target="_blank" rel="noopener">Stanford HAI</a></p>
     </div>
 
     <div class="news-item">
-      <div class="title"><span class="num">4.</span>OpenAI, 2026년 광고 매출 25억 달러 전망 — 2030년까지 1,000억 달러 목표</div>
-      <p class="summary">초기 광고 파일럿이 2개월 만에 연환산 1억 달러 수준 달성. ChatGPT 내 광고·추천 형태의 새 수익 축이 본격화될 가능성.</p>
-      <p class="meta">출처: <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates?utm_source=dct-ai-kakao&utm_medium=opnchat&utm_campaign=2026-04-21&utm_content=crescendo-ai" target="_blank" rel="noopener">Crescendo AI</a></p>
+      <div class="title"><span class="num">4.</span>PyMNTS — "엔터프라이즈 AI, 버티컬화 본격" 투자자 추종</div>
+      <p class="summary">수평형 범용 AI에서 산업·직무 특화 버티컬 AI로 투자 이동. 물류·모빌리티·헬스케어 등 수직 영역의 도메인 데이터 보유 사업자의 협상력 강화 흐름.</p>
+      <p class="meta">출처: <a href="https://www.pymnts.com/news/investment-tracker/2026/enterprise-ai-goes-vertical-and-investors-follow-fast/" target="_blank" rel="noopener">PYMNTS</a></p>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">5.</span>NVIDIA Agent Toolkit에 엔터프라이즈 17곳 탑승</div>
+      <p class="summary">자율 AI 에이전트 구축용 오픈소스 플랫폼에 Adobe·세일즈포스·SAP·서비스나우·지멘스·크라우드스트라이크·아틀라시안·케이든스 등이 초기 채택사로 합류. 에이전트 운영 계층 표준화 가속의 리포트성 시그널.</p>
+      <p class="meta">출처: <a href="https://venturebeat.com/technology/nvidia-launches-enterprise-ai-agent-platform-with-adobe-salesforce-sap-among" target="_blank" rel="noopener">VentureBeat</a></p>
+    </div>
+  </section>
+
+  <!-- 5. 규제/정책 -->
+  <section class="category">
+    <div class="cat-head">
+      <span class="cat-tag policy">규제/정책</span>
+      <span class="cat-name">법·가이드라인·컴플라이언스</span>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">1.</span>EU AI Act 고위험 조항 본격 시행 D-103일 (2026/8/2)</div>
+      <p class="summary">회원국별 AI 규제 샌드박스 1개 이상 설치 의무 시한도 동일. 채용·업무 배정·성과 모니터링용 AI는 전부 <b>고위험</b> 분류로 편입 — 유럽향 서비스 점검표 업데이트 필요.</p>
+      <p class="meta">출처: <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener">European Commission</a> · <a href="https://artificialintelligenceact.eu/" target="_blank" rel="noopener">EU AI Act Explorer</a></p>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">2.</span>뉴욕주 RAISE Act 수정안 2026 내 통과 유력 — 프론티어 모델 안전 프레임 의무</div>
+      <p class="summary">Governor Hochul이 12월 서명한 수정안이 2026 초 입법 확정 수순. 학습비용 기준으로 대형 개발사를 규제 대상에 포함시키며 안전 정책·리스크 경감 프레임 공개를 의무화.</p>
+      <p class="meta">출처: <a href="https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models" target="_blank" rel="noopener">NY Governor's Office</a></p>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">3.</span>OpenAI·앤트로픽·구글, 중국 모델 증류(Distillation) 공동 대응 공식화</div>
+      <p class="summary">Frontier Model Forum을 통해 적대적 추출 탐지 정보 교환. 4월 초 블룸버그·재팬타임스 보도로 확산 — 미·중 기술 유출 방지 협력이 공식 프레임에 진입.</p>
+      <p class="meta">출처: <a href="https://www.bloomberg.com/news/articles/2026-04-06/openai-anthropic-google-unite-to-combat-model-copying-in-china" target="_blank" rel="noopener">Bloomberg</a></p>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">4.</span>2026 AI 감사·채용 관련 주 법안 연이어 발효</div>
+      <p class="summary">AI를 활용한 채용·평가 시스템에 대한 편향 감사(Bias Audit) 의무가 미국 주별로 확장. 글로벌 75개국 이상이 AI 법안을 개발·추적 중이며 기업용 컴플라이언스 표준 정비가 가속.</p>
+      <p class="meta">출처: <a href="https://drata.com/blog/artificial-intelligence-regulations-state-and-federal-ai-laws-2026" target="_blank" rel="noopener">Drata</a></p>
+    </div>
+  </section>
+
+  <!-- 6. 국내 -->
+  <section class="category">
+    <div class="cat-head">
+      <span class="cat-tag domestic">국내</span>
+      <span class="cat-name">한국 AI 산업·정책 동향</span>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">1.</span>SK 브로드밴드, 전사 AI 역량 프로그램 "AI Agent Lab" 본격 가동 (4/20)</div>
+      <p class="summary">3~10월 집중 교육으로 중급 이상 AI 인재 비율을 9% → 20%로 2배 이상 끌어올리는 게 목표. 약 400명 양성. "Working with AI"를 2026년 핵심 테마로 선언하며 조직 차원 내재화 시작.</p>
+      <p class="meta">출처: <a href="https://www.koreatimes.co.kr/business/companies/20260420/sk-broadband-moves-to-train-employees-as-ai-specialists" target="_blank" rel="noopener">The Korea Times</a></p>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">2.</span>스탠퍼드 AI Index 기준 한국, 2025년 주목 AI 모델 5건으로 글로벌 3위</div>
+      <p class="summary">미국 50건·중국 30건 다음. 네이버 클라우드·업스테이지·KT 모델이 글로벌 리더보드에 진입. "단독 주자"가 아니라 복수 기업 동반 성장으로 한국 AI 구조가 전환.</p>
+      <p class="meta">출처: <a href="https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report" target="_blank" rel="noopener">Stanford HAI</a></p>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">3.</span>과기정통부, AI 기본법 시행령 6월 전문 공개 예정</div>
+      <p class="summary">시행령에서 "고영향 AI" 추가 지정 계획은 없다고 명시. 국내 B2B AI 도입 시 고영향 카테고리 재정의 가능성은 당장은 낮다는 시그널이지만, 영향평가·고지 의무 대비는 필요.</p>
+      <p class="meta">출처: <a href="https://m.etnews.com/20250423000389" target="_blank" rel="noopener">전자신문</a></p>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">4.</span>한국은행 분석 — AI 도입 시 생산성 최대 3.2%·GDP 12.6% 상승 가능</div>
+      <p class="summary">반면 노동자 27%는 대체·소득 감소 위험, 24%는 생산성 수혜. 정부·기업 AI 도입 가속화 논리의 공식 근거로 활용되며 ROI 대화의 레퍼런스 숫자로 유용.</p>
+      <p class="meta">출처: <a href="https://m.etnews.com/stats/detail_stats.html?id=51778" target="_blank" rel="noopener">전자신문 데이터</a></p>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><span class="num">5.</span>네이버·카카오, 2026 상반기 에이전틱 AI 본격 전환 로드맵</div>
+      <p class="summary">네이버는 1분기 AI 쇼핑 에이전트, 2분기 검색 내 AI 탭 공개. 카카오는 상반기 내 카카오톡·카나나 서치 정식 공개 후 멜론·카카오맵·선물하기·예약 등 주요 서비스로 확산.</p>
+      <p class="meta">출처: <a href="https://www.koreatimes.co.kr/business/tech-science/20260102/naver-kakao-gear-up-for-agentic-ai-era-in-2026" target="_blank" rel="noopener">The Korea Times</a></p>
     </div>
   </section>
 
   <footer>
-    <p style="margin:0 0 6px;"><b>Nick 님을 위한 실무 시사점</b></p>
-    <p style="margin:0;">① 엔터프라이즈 고객 대상 제안 시, <b>아마존-앤트로픽 확장</b>과 <b>애플-제미나이 제휴</b>는 "AI 스택 표준화"가 이미 시작됐다는 근거로 활용 가능합니다. ② <b>캔바 AI 2.0 + 클로드 디자인</b> 조합은 B2B 마케팅·세일즈 에셋 제작 자동화 파이프라인 설계의 참고점이 됩니다. ③ 제휴영업 KPI를 만들 때, PwC 보고서의 "20% 기업 독점" 데이터를 카운터파트 설득 레버로 써보세요.</p>
-    <p style="margin:10px 0 0; font-size:12.5px; color:var(--muted);">본 문서는 <b>2026-04-21 08:00 KST</b> 기준 자동 수집·큐레이션된 결과물입니다. 일부 속보성 항목은 후속 확인이 필요할 수 있으며, 링크를 통해 원문을 교차 확인하시길 권장합니다.</p>
+    <p style="margin:0;">본 문서는 <b>2026-04-21 08:00 KST</b> 기준 자동 수집·큐레이션된 결과물입니다. 일부 속보성 항목은 후속 확인이 필요할 수 있으며, 링크를 통해 원문을 교차 확인하시길 권장합니다. 국내 속보는 전자신문(m.etnews.com)을 1차 소스로, 글로벌은 CNBC·Bloomberg·VentureBeat·Google/Anthropic/OpenAI 공식 블로그를 우선 참고했습니다.</p>
   </footer>
 
 </div>
